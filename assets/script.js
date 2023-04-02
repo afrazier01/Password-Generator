@@ -19,19 +19,19 @@ function writePassword() {
   var lowercasePrompt = prompt('Do you want to include lowercase characters?')
   if (lowercasePrompt === 'yes') {
     passwordCriteria += 'abcdefghijklmnopqrstuvwuxyz'
-  }
+  } 
   var uppercasePrompt = prompt('Do you want to include uppercase characters?')
-  if (lowercasePrompt === 'yes') {
+  if (uppercasePrompt === 'yes') {
     passwordCriteria += 'ABCDEFGHIJKLMNOPQRSTUVWUXYZ'
-  }
+  } 
   var numbersPrompt = prompt('Do you want to include numbers?')
-  if (lowercasePrompt === 'yes') {
+  if (numbersPrompt === 'yes') {
     passwordCriteria += '0123456789'
-  }
+  } 
   var specialChartactersPrompt = prompt('Do you want to include special characters?')
-  if (lowercasePrompt === 'yes') {
+  if (specialChartactersPrompt === 'yes') {
     passwordCriteria += '!#$%&()*+,-./:;<=>?@[\]^_`{|}~'
-  }
+  } 
 
   var userConfirm = confirm('Are you sure you have entered the correct password requirements?')
   if (userConfirm === false) {
