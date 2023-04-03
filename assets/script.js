@@ -16,27 +16,48 @@ function writePassword() {
     return
   }
 
+  //Character Prompts
   var lowercasePrompt = prompt('Do you want to include lowercase characters?')
   if (lowercasePrompt === 'yes') {
     passwordCriteria += 'abcdefghijklmnopqrstuvwuxyz'
+  }
+  askUser1 = confirm('You selected: '+ lowercasePrompt.toUpperCase() + '. \nIf this is correct please click OK or enter, otherwise cancel this request and try again.')
+  if (askUser1 === false) {
+    event.preventDefault()
+    return
   } 
+
   var uppercasePrompt = prompt('Do you want to include uppercase characters?')
   if (uppercasePrompt === 'yes') {
     passwordCriteria += 'ABCDEFGHIJKLMNOPQRSTUVWUXYZ'
+  }
+  askUser2 = confirm('You selected: '+ uppercasePrompt.toUpperCase() + '. \nIf this is correct please click OK or enter, otherwise cancel this request and try again.')
+  if (askUser2 === false) {
+    event.preventDefault()
+    return
   } 
+  
   var numbersPrompt = prompt('Do you want to include numbers?')
   if (numbersPrompt === 'yes') {
     passwordCriteria += '0123456789'
   } 
+  askUser3 = confirm('You selected: '+ numbersPrompt.toUpperCase() + '. \nIf this is correct please click OK or enter, otherwise cancel this request and try again.')
+  if (askUser3 === false) {
+    event.preventDefault()
+    return
+  } 
+
   var specialChartactersPrompt = prompt('Do you want to include special characters?')
   if (specialChartactersPrompt === 'yes') {
     passwordCriteria += '!#$%&()*+,-./:;<=>?@[\]^_`{|}~'
   } 
-
-  var userConfirm = confirm('Are you sure you have entered the correct password requirements?')
-  if (userConfirm === false) {
+  askUser4 = confirm('You selected: '+ specialChartactersPrompt.toUpperCase() + '. \nIf this is correct please click OK or enter, otherwise cancel this request and try again.')
+  if (askUser4 === false) {
     event.preventDefault()
+    return
   }
+
+  //no input selected
   if (passwordCriteria === '') {
     alert('You did not enter any criteria. Please try again')
     return
