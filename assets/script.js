@@ -72,8 +72,8 @@ function writePassword() {
 //https://www.youtube.com/watch?v=jww3V2fSQyg&t=190s
   }                             
   
-  console.log(randomPassword)
-  document.getElementById('password').innerHTML = randomPassword
+  console.log('User gernerated password:',randomPassword)
+  document.getElementById('password').innerText = randomPassword
 }
 
 // Add event listener to generate button
