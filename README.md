@@ -16,7 +16,7 @@ N/A
 
 ## Usage
 
-Click [Here](https://afrazier01.github.io/challenge-3/) to go to the deloyed webpage. Begin by clicking the generate password button in the middle of the screen, then answer the prompts and confirm your inputs before password is generated. 
+Click [Here](https://afrazier01.github.io/Password-Generator/) to go to the deloyed webpage. Begin by clicking the generate password button in the middle of the screen, then answer the prompts and confirm your inputs before password is generated. 
 
 Once the webpage is open, view logged messages and variables to console by using Chrome DevTools. Right-click and select inspect; or for windows - Control + Shift + I and for MacOS - Command + Option + I. Navigate to the the console tab to observe how the webpage is functioning.
 
